@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodes</title>
+    <style>
+        @font-face {
+            font-family: 'AAA';
+            src: url('PragueStd.otf');
+        }
+
+        body {
+            background: url('B5.png') fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+       nav {
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
+    position: fixed; 
+    top: 190px; 
+    width: 140px;
+    height: 50%; 
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px; 
+        }
+
+        nav a {
+            font-family: 'AAA';
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            padding: 10px 0;
+        }
+
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            margin-left: 140px; 
+        }
+
+       
+        .video-container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            flex-grow: 1;
+            padding: 20px;
+            border-radius: 15px;  
+        }
+
+        video {
+            width: 100%; 
+            max-width: 800px; 
+            height: auto; 
+            margin: 10px 0;
+            border-radius: 15px;  
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="characters.html">Characters</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <div class="video-container">
+            <video controls>
+                <source src="v4.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="v2.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="v3.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="v1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+</body>
+</html>

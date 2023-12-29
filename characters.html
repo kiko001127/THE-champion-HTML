@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <style>
+
+        @font-face{
+            font-family:'Z' ;
+            src: url('PersonalUse_ShippedGoods2.ttf');
+
+        }
+
+        @font-face{
+            font-family: 'AAA';
+            src: url('PragueStd.otf');
+        }
+
+ .side-list {
+            position: fixed;
+            right: 0;
+            top: 230px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            line-height:30px;
+        }
+
+        .side-list a {
+            font-family: 'AAA';
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url("B1.png") fixed;
+    background-color: black;
+    color: #FFD700; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+        }
+
+         nav {
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
+    position: fixed; align-items: center;
+    top: 190px; 
+    width: 140px;
+    height: 50%; 
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 15px; 
+        }
+
+        nav a {
+            font-family: 'AAA';
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            padding: 10px 0;
+        }
+
+        .player-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .player-card {
+            width: 80%; 
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .player-image {
+            width: 80%; 
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .player-text {
+            font-family: 'AAA';
+            position: absolute;
+            top: 100%;
+            left: 10%;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 90px;
+            box-sizing: border-box;
+            opacity: 0;
+            border-radius: 10px;
+            transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .player-card:hover .player-text {
+            top: 0;
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="characters.html">Characters</a>
+        <a href="episodes.html">Episodes</a>        
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+<div class="side-list">
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">Cristiano Ronaldo</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Lionel_Messi">Lionel Messi</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Kevin_De_Bruyne">Kevin De Bruyne</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Pep_Guardiola">Pep Guardiola</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Thibaut_Courtois">Thibaut Courtois</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Erik_ten_Hag">Erik ten Hag</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Mourinho">José Mourinho</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Marco_Reus">Marco Reus</a></li>
+        <li><a href="#">ON STRUCTION</a></li>
+    </ul>
+ </div>
+
+<div class="player-container">
+    <!-- Player 1 -->
+    <div class="player-card">
+        <img class="player-image" src="c1.png" alt="Player 1">
+        <div class="player-text">
+            <h3>Cristiano Ronaldo</h3>
+            <hr>
+            <p>Born on February 5, 1985, is a Portuguese football legend renowned for his goal-scoring brilliance and versatility. With a storied career at clubs like Manchester United and Real Madrid, he has earned multiple Ballon d'Or awards. Ronaldo's athleticism, dedication, and leadership on the pitch have solidified his status as one of the greatest footballers of all time.</p>
+        
+        </div>
+    </div>
+
+    <!-- Player 2 -->
+    <div class="player-card">
+        <img class="player-image" src="c2.png" alt="Player 2">
+        <div class="player-text">
+            <h3>Lionel Messi</h3>
+            <hr>
+            <p> Born on June 24, 1987, is an Argentine football maestro recognized for his unparalleled skill, agility, and goal-scoring prowess. With a remarkable career at FC Barcelona and subsequently at Paris Saint-Germain, Messi has secured multiple Ballon d'Or titles, establishing himself as one of the greatest footballers of all time.</p>
+        </div>
+    </div>
+
+    <!-- Player 3 -->
+    <div class="player-card">
+        <img class="player-image" src="c3.png" alt="Player 2">
+        <div class="player-text">
+            <h3>Kevin De Bruyne</h3>
+            <hr>
+            <p>Born on June 28, 1991, is a Belgian football maestro renowned for his vision, passing accuracy, and versatility. An integral part of Manchester City and the Belgian national team, De Bruyne's exceptional midfield play has earned him accolades, including the PFA Players' Player of the Year. His strategic brilliance and creativity make him a key player in the world of football.</p>
+        </div>
+    </div>
+
+ <!-- Player 4 -->
+    <div class="player-card">
+        <img class="player-image" src="c4.png" alt="Player 4">
+        <div class="player-text">
+            <h3>Pep Guardiola</h3>
+            <hr>
+            <p>Born on January 18, 1971, is a Spanish football manager known for his tactical brilliance. As a former midfielder, he transitioned to coaching, achieving tremendous success at FC Barcelona, Bayern Munich, and currently at Manchester City. Guardiola is celebrated for his innovative style, emphasizing possession-based football and winning numerous domestic and international titles.</p>
+        </div>
+    </div>
+
+     <!-- Player 5 -->
+    <div class="player-card">
+        <img class="player-image" src="c5.png" alt="Player 4">
+        <div class="player-text">
+            <h3>Thibaut Courtois</h3>
+            <hr>
+            <p>Born on May 11, 1992, is a Belgian professional footballer acclaimed for his goalkeeping prowess. Standing out for his height and agility, Courtois has excelled at top clubs, notably Chelsea and Real Madrid. His impressive shot-stopping abilities, command of the penalty area, and consistent performances have established him as one of the premier goalkeepers in the world, earning him individual accolades and contributing to team successes.</p>
+        </div>
+    </div>
+
+         <!-- Player 6 -->
+    <div class="player-card">
+        <img class="player-image" src="c6.png" alt="Player 4">
+        <div class="player-text">
+            <h3>Erik ten Hag</h3>
+            <hr>
+            <p>Born on February 2, 1970, is a Dutch football manager and former player.Ten Hag has achieved domestic and international success, steering Ajax to notable victories. His strategic acumen and commitment to player development have solidified his reputation as a respected figure in the world of football management.</p>
+        </div>
+    </div>
+
+         <!-- Player 7 -->
+    <div class="player-card">
+        <img class="player-image" src="c7.png" alt="Player 4">
+        <div class="player-text">
+            <h3>José Mourinho</h3>
+            <hr>
+            <p>Born on January 26, 1963, is a Portuguese football manager known for his tactical prowess. A charismatic figure, he has led top clubs such as FC Porto, Chelsea, Real Madrid, Manchester United, and Tottenham Hotspur. Mourinho, nicknamed "The Special One," has won numerous domestic and international honors, including multiple league titles and UEFA Champions League trophies, showcasing his impact on the highest echelons of football management.</p>
+        </div>
+    </div>
+
+         <!-- Player 8 -->
+    <div class="player-card">
+        <img class="player-image" src="c8.png" alt="Player 4">
+        <div class="player-text">
+            <h3>Marco Reus</h3>
+            <hr>
+            <p>Born on May 31, 1989, is a German professional footballer known for his versatility and attacking prowess. As the captain of Borussia Dortmund, Reus has showcased exceptional skill, vision, and goal-scoring ability. Despite facing injuries, he remains a key figure for both club and country, earning admiration for his leadership and commitment. Reus is celebrated for his impact on the pitch and his enduring influence in German football.</p>
+        </div>
+    </div>
+
+         <!-- Player 9 -->
+    <div class="player-card">
+        <img class="player-image" src="c10.jpg" alt="Player 4">
+        <div class="player-text">
+            <h3>TOO MANY</h3>
+            <hr>
+            <p>I AM TIRED:(</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
